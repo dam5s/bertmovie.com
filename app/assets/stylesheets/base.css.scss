@@ -1,0 +1,28 @@
+@import 'grid.css.scss';
+@import 'compass/css3';
+
+$columns: 12;
+$column-width: 60;
+$gutter-width: 0;
+$total-width: 100%;
+
+$blackish: #333;
+$greyish: #f2f2f2;
+$border-color: #fff;
+$bright-color: #74D0F1;
+
+body {
+  font-family: 'Helvetica Neue' sans-serif;
+  font-size: .9em;
+  background-color: $greyish;
+  color: $blackish;
+}
+
+h1 {
+  background-color: $bright-color;
+  color: #fff;
+  width: 100%;
+  padding: 2em 0;
+  text-align: center;
+  font-size: 150%;
+}
