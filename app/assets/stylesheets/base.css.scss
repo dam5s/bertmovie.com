@@ -1,7 +1,7 @@
 @import 'grid.css.scss';
 @import 'compass/css3';
-@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
 
 $columns: 12;
 $column-width: 60;
@@ -16,7 +16,8 @@ $dark-blue: #394E67;
 
 @mixin title() {
   color: $bright-color;
-  font-family: 'Lato';
+  font-family: 'Lato' 'Helvetica Neue' sans-serif;
+  font-weight: 900;
   @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
 }
