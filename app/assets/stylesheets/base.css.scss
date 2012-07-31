@@ -135,6 +135,43 @@ footer {
       text-transform: none;
     }
   }
+
+  dl {
+    margin: 2em auto;
+    height: 20px;
+    margin-right: 5px;
+
+    dt, dd {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: bottom;
+    }
+
+    dt {
+      margin: 0 5px;
+    }
+
+    dd {
+      background: no-repeat image-url("bert_the_movie.jpg") bottom right;
+      text-indent: -100px;
+      overflow: hidden;
+      width: 20px;
+
+      &.twitter {
+        background-position: right -863px;
+      }
+      &.youtube {
+        background-position: right -843px;
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 section {
