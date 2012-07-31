@@ -1,15 +1,17 @@
 %header
   %h1 BERT
   %h2 the emotion picture
+  = link_to 'Watch the Trailer', '#trailer', class: 'modal'
+
 
 %nav#menu
   %ul
-    %li= link_to 'Story', '#story'
-    %li= link_to 'Cast/Crew', '#cast_crew'
-    %li= link_to 'Gallery', '#gallery'
-    %li= link_to 'Soundtrack', '#soundtrack'
-    %li= link_to 'Updates', '#updates'
-    %li= link_to 'Contact', '#contact'
+    %li= link_to 'Story', '#story', class: 'modal'
+    %li= link_to 'Cast/Crew', '#cast_crew', class: 'modal'
+    %li= link_to 'Gallery', '#gallery', class: 'modal'
+    %li= link_to 'Soundtrack', '#soundtrack', class: 'modal'
+    %li= link_to 'Updates', '#updates', class: 'modal'
+    %li= link_to 'Contact', '#contact', class: 'modal'
 
 %ul.cast
   %li.actor-1
@@ -18,7 +20,7 @@
   %li.actor-4
 
 %footer
-  %p <em>Montanick Pictures</em> presents a <em>Jose MONTESINOS</em> production <em class="title">&ldquo;BERT the emotion picture&rdquo;</em>
+  %p <em>Montanick Pictures</em> presents a <em>Jose MONTESINOS</em> production <em class='title'>&ldquo;BERT the emotion picture&rdquo;</em>
   %p <em>Andre MEADOWS Morgan BENOIT Jeneta ST CLAIR Myko OLIVIER Erin KONSTANTINE</em>
   %p with <em>Giovannie ESPIRITU Lisa YOUNGER</em> and <em>David ATWOOD</em> Music by <em>Brian RODVIEN</em>
   %p Written, Produced, &amp; Directed by <em>Jose MONTESINOS</em>
@@ -34,10 +36,14 @@
   %h3 Coming Soon
 
 %section#soundtrack
-  %iframe{width: "100%", height: "100%", scrolling: "no", frameborder: "no", src: "http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2140858&amp;auto_play=false&amp;show_artwork=true&amp;color=9C00BA"}
+  - iframe 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2140858&amp;auto_play=false&amp;show_artwork=true&amp;color=9C00BA'
 
 %section#updates
   %h3 Coming Soon
 
 %section#contact
   %h3 Coming Soon
+
+%section#trailer
+  - iframe 'http://www.youtube-nocookie.com/embed/wVc_5gkudQA?rel=0'
+
