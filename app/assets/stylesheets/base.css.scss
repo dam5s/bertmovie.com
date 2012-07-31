@@ -31,34 +31,56 @@ body {
 }
 
 header {
-  margin: 3em 0;
-  font-size: 250%;
-  background-color: $grey;
-  padding: 1em 0;
-  width: 100%;
+  text-indent: -999999px;
+  overflow: hidden;
+  margin: 0 auto 2em;
+  width: 980px;
 
-  h1, h2 {
-    @include title;
-    font-size: 200%;
-    width: 80%;
-    margin: 0 10%;
-  }
-
-  h2 {
-    color: #444;
-    font-size: 80%;
-  }
+  background: no-repeat image-url("bert_the_movie.jpg") top center;
+  height: 550px;
 }
 
 nav {
-  margin: 3em 0;
+  margin: 0 0 1em 0;
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   text-transform: uppercase;
 
   li {
     display: inline-block;
     @include title;
+  }
+}
+
+.cast {
+  height: 190px;
+  width: 980px;
+  margin: 0 auto 1em;
+
+  li {
+    width: 228px;
+    height: 188px;
+    background: no-repeat image-url("bert_the_movie.jpg") bottom left;
+    float: left;
+    margin-right: 38px;
+
+    &.actor-1 {
+      width: 193px;
+    }
+
+    &.actor-2 {
+      background-position: -195px bottom;
+    }
+
+    &.actor-3 {
+      width: 216px;
+      background-position: -432px bottom;
+    }
+
+    &.actor-4 {
+      background-position: -649px bottom;
+      margin-right: 0;
+    }
   }
 }
 
@@ -70,7 +92,7 @@ footer {
   text-align: center;
 
   em {
-    font-size: 200%;
+    font-size: 150%;
 
     &.title {
       text-transform: none;
