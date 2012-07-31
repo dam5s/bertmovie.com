@@ -12,23 +12,6 @@ $black: #000;
 $white: #fff;
 $link-color: #9C00BA;
 $hover-color: #9C00BA - #009 + #990;
-$grey: #111;
-$dark-blue: #394E67;
-
-@mixin menu() {
-  a, a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-    color: $link-color;
-    font-family: 'Lato' 'Helvetica Neue' sans-serif;
-    font-weight: 900;
-    @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
-    -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
-  }
-
-  a:hover {
-    color: $hover-color;
-  }
-}
 
 body {
   font-family: 'Helvetica Neue' sans-serif;
@@ -36,6 +19,17 @@ body {
   background-color: $black;
   color: $white;
   padding-bottom: 3em;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: $link-color;
+  font-family: 'Lato' 'Helvetica Neue' sans-serif;
+  font-weight: 900;
+}
+
+a:hover {
+  color: $hover-color;
 }
 
 header {
@@ -56,7 +50,11 @@ nav {
 
   li {
     display: inline-block;
-    @include menu;
+
+    a, a:hover, a:visited, a:link, a:active {
+      @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
+      -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+    }
   }
 }
 
@@ -105,5 +103,22 @@ footer {
     &.title {
       text-transform: none;
     }
+  }
+}
+
+section {
+  display: none;
+}
+
+.ui-dialog {
+  background-color: $black;
+  padding: 1em;
+  @include box-shadow();
+
+  h3 {
+    font-family: 'Lato' 'Helvetica Neue' sans-serif;
+    font-size: 150%;
+    padding-top: 3em;
+    text-align: center;
   }
 }
