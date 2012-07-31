@@ -10,16 +10,24 @@ $total-width: 100%;
 
 $black: #000;
 $white: #fff;
-$bright-color: #9C00BA;
+$link-color: #9C00BA;
+$hover-color: #9C00BA - #009 + #990;
 $grey: #111;
 $dark-blue: #394E67;
 
-@mixin title() {
-  color: $bright-color;
-  font-family: 'Lato' 'Helvetica Neue' sans-serif;
-  font-weight: 900;
-  @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+@mixin menu() {
+  a, a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: $link-color;
+    font-family: 'Lato' 'Helvetica Neue' sans-serif;
+    font-weight: 900;
+    @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
 }
 
 body {
@@ -48,14 +56,14 @@ nav {
 
   li {
     display: inline-block;
-    @include title;
+    @include menu;
   }
 }
 
 .cast {
   height: 190px;
   width: 980px;
-  margin: 0 auto 1em;
+  margin: 0 auto 2em;
 
   li {
     width: 228px;
