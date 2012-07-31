@@ -13,6 +13,11 @@ $white: #fff;
 $link-color: #9C00BA;
 $hover-color: #9C00BA - #009 + #990;
 
+@mixin custom-text-shadow() {
+  @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+}
+
 body {
   font-family: 'Helvetica Neue' sans-serif;
   font-size: .9em;
@@ -50,10 +55,14 @@ nav {
 
   li {
     display: inline-block;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     a, a:hover, a:visited, a:link, a:active {
-      @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
-      -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+      @include custom-text-shadow();
     }
   }
 }
@@ -111,9 +120,25 @@ section {
 }
 
 .ui-dialog {
-  background-color: $black;
-  padding: 1em;
+  background-color: $black + #333;
+  padding: 0 1em 1em 1em;
   @include box-shadow();
+
+  .ui-dialog-titlebar {
+    padding: 1em 0;
+
+    .ui-dialog-title {
+      font-size: 150%;
+      font-family: 'Lato' 'Helvetica Neue' sans-serif;
+      @include custom-text-shadow();
+    }
+
+    .ui-dialog-titlebar-close {
+      float: right;
+      line-height: 150%;
+    }
+  }
+
 
   h3 {
     font-family: 'Lato' 'Helvetica Neue' sans-serif;

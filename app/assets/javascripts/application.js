@@ -9,6 +9,7 @@ $(function() {
     var $dialog = $(selector);
 
     $dialog.dialog({
+      title: $(this).html(),
       width: 800,
       height: 500
     });
