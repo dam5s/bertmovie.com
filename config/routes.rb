@@ -1,4 +1,4 @@
 BertmovieCom::Application.routes.draw do
-  resources :messages, only: [:new, :create]
+  resources :messages, only: [:create]
   root to: 'home#index'
 end

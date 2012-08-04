@@ -8,9 +8,11 @@ $(function() {
     var $dialog = $(selector);
 
     $dialog.dialog({
-      title: $(this).html(),
+      title: $(this).attr('title'),
       width: 800,
       height: 531
     });
   });
+
+  $('#notice').delay(5000).fadeOut();
 });

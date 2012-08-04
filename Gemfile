@@ -8,4 +8,5 @@ gem 'uglifier', '>= 1.0.3'
 
 group :development, :test do
   gem 'debugger'
+  gem 'therubyracer'
 end

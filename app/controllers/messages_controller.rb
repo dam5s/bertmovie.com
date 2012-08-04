@@ -1,11 +1,7 @@
 class MessagesController < ApplicationController
-  def new
-    @message = Message.new
-  end
-
   def create
-    Message.new(params).send!
+    Message.new(params[:message]).send!
     flash[:notice] = 'Message Sent!'
-    redirect_to action: 'new'
+    redirect_to root_path
   end
 end
