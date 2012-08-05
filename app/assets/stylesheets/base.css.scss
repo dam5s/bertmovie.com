@@ -18,11 +18,14 @@ $hover-color: #ddd;
 }
 
 body {
-  font-family: 'Helvetica Neue' sans-serif;
-  font-size: .9em;
   background-color: $black;
-  color: $white;
   padding-bottom: 3em;
+  font-size: .8em;
+
+  * {
+    color: $white;
+    font-family: 'Helvetica Neue';
+  }
 }
 
 a, a:hover, a:visited, a:link, a:active {
@@ -299,15 +302,19 @@ form {
     position: absolute;
     bottom: 0;
     width: 98%;
-    padding: 0 1%;
+    padding: 0;
+    margin: 0;
 
     a, a:link {
       color: #fff;
       font-weight: normal;
-      font-family: 'Helvetica Neue' sans-serif;
-    }
+      font-family: 'Helvetica Neue';
+      padding: 1em;
+      display: block;
+      width: 10%;
 
-    .previous { float: left; }
-    .next { float: right; }
+      &.previous { float: left; }
+      &.next { float: right; }
+    }
   }
 }

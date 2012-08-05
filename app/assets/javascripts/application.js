@@ -11,7 +11,7 @@ $(function() {
     $dialog.dialog({
       title: $(this).attr('title'),
       width: 800,
-      height: 531,
+      height: 523,
       beforeClose: function(event, ui) {
         $(this).dialog('destroy');
       }
