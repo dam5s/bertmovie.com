@@ -11,10 +11,9 @@ $total-width: 100%;
 $black: #000;
 $white: #fff;
 $link-color: #9C00BA;
-$hover-color: #9C00BA - #009 + #990;
+$hover-color: #ddd;
 
 @mixin custom-text-shadow() {
-  @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
 }
 
@@ -29,7 +28,7 @@ body {
 a, a:hover, a:visited, a:link, a:active {
   text-decoration: none;
   color: $link-color;
-  font-family: 'Lato' 'Helvetica Neue' sans-serif;
+  font-family: 'Lato';
   font-weight: 900;
 }
 
@@ -63,9 +62,9 @@ header {
     overflow: hidden;
     cursor: pointer;
     text-transform: uppercase;
-    @include text-shadow(0 1px 1px rgba(255, 255, 255, .7), 0 12px 24px rgba(0,0,0,.4));
     text-align: center;
     font-size: 130%;
+    line-height: 115%;
   }
 
   #notice {
@@ -133,7 +132,7 @@ nav {
 
 footer {
   font-family: 'PT Sans Narrow';
-  font-weight: 900;
+  font-weight: 400;
   font-size: 100%;
   text-transform: uppercase;
   text-align: center;
@@ -203,7 +202,8 @@ section {
 
     .ui-dialog-title {
       font-size: 150%;
-      font-family: 'Lato' 'Helvetica Neue' sans-serif;
+      font-family: 'Lato';
+      color: $hover-color;
       @include custom-text-shadow();
     }
 
@@ -215,7 +215,7 @@ section {
 
 
   h3 {
-    font-family: 'Lato' 'Helvetica Neue' sans-serif;
+    font-family: 'Lato';
     font-size: 150%;
     padding-top: 3em;
     text-align: center;
