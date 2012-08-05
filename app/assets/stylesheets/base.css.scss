@@ -240,6 +240,10 @@ form {
     }
   }
 
+  textarea {
+    width: 600px;
+  }
+
   input[type=submit] {
     color: $white;
     padding: .5em 1em;
