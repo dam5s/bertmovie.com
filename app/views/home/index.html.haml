@@ -41,7 +41,15 @@
   %h3 Coming Soon
 
 %section#gallery
-  %h3 Coming Soon
+  %ol
+    - 24.times do |num|
+      %li
+        %figure
+          = image_tag asset_path("gallery/#{num+1}.jpg")
+          %figcaption Photo #{num+1} of 24
+  %nav
+    %a{href: '#gallery/previous', class: 'previous'} &lt; Previous
+    %a{href: '#gallery/next', class: 'next'} Next &gt;
 
 %section#soundtrack
   - iframe 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2140858&amp;auto_play=false&amp;show_artwork=true&amp;color=9C00BA'
