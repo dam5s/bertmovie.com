@@ -19,11 +19,8 @@ body {
   background-color: $black;
   padding-bottom: 3em;
   font-size: .8em;
-
-  * {
-    color: $white;
-    font-family: 'Helvetica Neue';
-  }
+  color: $white;
+  font-family: 'Helvetica Neue' sans-serif;
 }
 
 a, a:hover, a:visited, a:link, a:active {
@@ -290,6 +287,7 @@ form {
           width: 100%;
           padding: 1em 0;
           background-color: rgba(0,0,0,.3);
+          font-family: 'Helvetica Neue' sans-serif;
         }
       }
     }
@@ -306,7 +304,7 @@ form {
     a, a:link {
       color: #fff;
       font-weight: normal;
-      font-family: 'Helvetica Neue';
+      font-family: 'Helvetica Neue' sans-serif;
       padding: 1em;
       display: block;
       width: 10%;
