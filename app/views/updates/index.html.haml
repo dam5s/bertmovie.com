@@ -1,0 +1,16 @@
+%h1 Listing updates
+
+- @updates.each do |update|
+  %article
+    - if update.published_at
+      = update_published_at(update)
+    - else
+      .time Not Published
+    %h1= update.title
+    = markdown update.body
+
+    %nav
+      = link_to 'Edit', edit_update_path(update)
+      = link_to 'Destroy', update, method: :delete, data: { confirm: 'Are you sure?' }
+
+%nav= link_to 'New Update', new_update_path

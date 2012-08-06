@@ -8,7 +8,7 @@ $total-width: 100%;
 
 $black: #000;
 $white: #fff;
-$link-color: #9C00BA;
+$bright-color: #9C00BA;
 $hover-color: #ddd;
 
 @mixin custom-text-shadow() {
@@ -23,9 +23,16 @@ body {
   font-family: 'Helvetica Neue' sans-serif;
 }
 
+h1 {
+  font-family: 'Lato';
+  font-size: 150%;
+  color: $hover-color;
+  padding: 1em;
+}
+
 a, a:hover, a:visited, a:link, a:active {
   text-decoration: none;
-  color: $link-color;
+  color: $bright-color;
   font-family: 'Lato';
   font-weight: 900;
 }
@@ -245,8 +252,8 @@ form {
   input[type=submit] {
     color: $white;
     padding: .5em 1em;
-    border: 1px solid $link-color -#333;
-    @include background(linear-gradient(top left, $link-color, $link-color -#333));
+    border: 1px solid $bright-color -#333;
+    @include background(linear-gradient(top left, $bright-color, $bright-color -#333));
     @include border-radius(5px);
     @include box-shadow(0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(255,255,255,0.7));
     @include text-shadow(0px -1px 0px rgba(000,000,000,0.4), 0px 1px 0px rgba(255,255,255,0.3));
@@ -312,5 +319,39 @@ form {
       &.previous { float: left; }
       &.next { float: right; }
     }
+  }
+}
+
+#updates {
+  ol {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+article {
+  padding: 1em;
+  background-color: $black +#222;
+  @include border-radius(5px);
+  margin-bottom: 1em;
+
+  h1 {
+    font-family: 'Lato';
+    font-weight: 900;
+    color: $bright-color;
+    font-size: 150%;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+
+  .time, time {
+    float: right;
+  }
+
+  nav a {
+    font-size: 50%;
+    float: right;
+    display: block;
+    margin-left: 1em;
   }
 }

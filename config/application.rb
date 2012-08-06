@@ -3,7 +3,10 @@ require File.expand_path('../boot', __FILE__)
 # Pick the frameworks you want:
 require "action_controller/railtie"
 require "action_mailer/railtie"
+require "active_record/railtie"
 require "sprockets/railtie"
+require "redcarpet"
+
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
