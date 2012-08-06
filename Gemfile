@@ -14,5 +14,5 @@ group :development, :test do
 end
 
 group :production do
-  gem 'ruby-pg'
+  gem 'pg'
 end

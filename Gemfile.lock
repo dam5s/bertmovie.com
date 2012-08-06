@@ -87,8 +87,6 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     redcarpet (2.1.1)
-    ruby-pg (0.8.0)
-      pg (~> 0)
     sass (3.1.20)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -118,9 +116,9 @@ DEPENDENCIES
   compass
   debugger
   haml
+  pg
   rails (~> 3.2.3)
   redcarpet
-  ruby-pg
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
