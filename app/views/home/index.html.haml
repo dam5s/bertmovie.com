@@ -52,10 +52,45 @@
       Also starring Myko Olivier and Erin Konstantine, <em>Bert: The Emotion Picture</em> is a surreal fable about the
       nature of love and superficiality.
 
-%section#cast_crew
-  %h3 Coming Soon
+%section#cast_crew.carousel
+  %ol
+    %li
+      %article#jose_montesinos
+        = image_tag asset_path('cast/jose_montesinos.jpg')
+        %hgroup
+          %h1 Jose Montesinos
+          %h2 Writer/Director
+        %p
+          A native San Franciscan of Peruvian and Salvadorean descent,
+          Jose Montesinos has been making movies since he received his first video
+          camera at age 14.  He continued to hone his skills through the years,
+          and also attended film school at San Francisco City College in
+          the early 1990's.  In 2009, Jose was awarded the Mastermind grant
+          from the SF Weekly for being recognized as a standout local talent.
+          Jose’s feature-length crime drama titled Owned was an official selection
+          in several film festivals, including HBO’s New York International Latino
+          Film Festival, and has since found a distribution deal with Maverick
+          Entertainment. It was released in July 2011.
+        %nav
+          %a{href: '#cast_crew/next', class: 'next'} Next &gt;
+    %li
+      %article#morgan_benoit
+        = image_tag asset_path('cast/morgan_benoit.jpg')
+        %hgroup
+          %h1 Morgan Benoit
+          %h2 Actor &ldquo;Steffen&rdquo;
+        %p
+          Morgan Benoit has been involved in Chinese martial arts for over 15 years.
+          Following his passion, he moved to China at age 18 to study at the Beijing Sports University where he mastered Long Fist Kung Fu.
+          Once ascending to the top of his class in just a couple of years, he was admitted to the prestigious Shi Cha Hai Sports Academy,
+          a former training ground of Jet Li and many of China's top Olympic athletes.
+          His love of martial arts led to his interest in acting and he started in China as a stunt man.
+          He eventually worked his way up to leading roles in many Chinese and American productions.
+          His ability and enthusiasm was well-noted by Jackie Chan whom he worked with in The Forbidden Kingdom (2008).
+        %nav
+          %a{href: '#cast_crew/previous', class: 'previous'} &lt; Previous
 
-%section#gallery
+%section#gallery.carousel
   %ol
     - 24.times do |num|
       %li

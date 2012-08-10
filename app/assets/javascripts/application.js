@@ -30,5 +30,17 @@ $(function() {
     e.preventDefault();
   });
 
+  $('#cast_crew').jcarousel();
+
+  $('.previous', '#cast_crew').click(function(e) {
+    $('#cast_crew').jcarousel('scroll', '-=1');
+    e.preventDefault();
+  });
+
+  $('.next', '#cast_crew').click(function(e) {
+    $('#cast_crew').jcarousel('scroll', '+=1');
+    e.preventDefault();
+  });
+
   $('#notice').delay(5000).fadeOut();
 });

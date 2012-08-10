@@ -191,6 +191,7 @@ footer {
 
 section {
   display: none;
+  height: 576px;
 
   iframe {
     width: 100%;
@@ -261,7 +262,7 @@ form {
   }
 }
 
-#gallery {
+.carousel {
   position: relative;
   overflow: hidden;
 
@@ -274,6 +275,46 @@ form {
       height: 476px;
       width: 800px;
       float: left;
+      position: relative;
+    }
+  }
+
+  article {
+    height: 448px;
+  }
+
+  nav {
+    font-size: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    padding: 0;
+    margin: 0;
+
+    a, a:link {
+      color: #fff;
+      font-weight: normal;
+      font-family: 'Helvetica Neue' sans-serif;
+      padding: 1em;
+      display: block;
+      width: 10%;
+
+      &.previous { float: left; }
+      &.next { float: right; }
+    }
+  }
+}
+
+#jose_montesinos {
+  img {
+    margin-top: 5.5em;
+  }
+}
+
+#gallery {
+  ol {
+
+    li {
       text-align: center;
       position: relative;
       background-color: $black;
@@ -300,27 +341,6 @@ form {
       }
     }
   }
-
-  nav {
-    font-size: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 98%;
-    padding: 0;
-    margin: 0;
-
-    a, a:link {
-      color: #fff;
-      font-weight: normal;
-      font-family: 'Helvetica Neue' sans-serif;
-      padding: 1em;
-      display: block;
-      width: 10%;
-
-      &.previous { float: left; }
-      &.next { float: right; }
-    }
-  }
 }
 
 #updates {
@@ -337,6 +357,7 @@ article {
   margin-bottom: 1em;
   font-size: 110%;
   line-height: 150%;
+  overflow: auto;
 
   p {
     line-height: 150%;
@@ -355,7 +376,7 @@ article {
     color: $highlight-color;
   }
 
-  h1 {
+  h1, h2 {
     font-family: 'Lato';
     font-weight: 900;
     color: $bright-color;
@@ -364,14 +385,24 @@ article {
     padding: 0;
   }
 
+  h2 {
+    font-size: 120%;
+    color: $hover-color;
+    font-style: italic;
+  }
+
+  hgroup {
+    h1 { margin-bottom: .5em; }
+    h2 { margin-bottom: 1.5em; }
+  }
+
   .time, time {
     float: right;
   }
 
-  nav a {
-    font-size: 50%;
+  img {
     float: right;
-    display: block;
-    margin-left: 1em;
+    max-height: 450px;
+    margin-left: 10px;
   }
 }
