@@ -304,11 +304,16 @@ form {
       &.next { float: right; }
     }
   }
+
+  li:first-of-type .previous {display: none;}
+  li:last-of-type .next {display: none;}
 }
 
 #jose_montesinos,
 #giovannie_espiritu,
 #ryan_johnson,
+#jeneta_st_clair,
+#alex_arleo,
 #matthew_zipkin {
   img {
     margin-top: 5.5em;
@@ -365,7 +370,7 @@ article {
 
   p {
     line-height: 150%;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     margin-top: .5em;
   }
 
