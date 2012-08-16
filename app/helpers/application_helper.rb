@@ -19,7 +19,9 @@ module ApplicationHelper
 
 
   def full_cast
-    #Andre Meadows, Morgan Benoit, Jeneta St. Clair, Myko Olivier, Erin Konstantine, David Atwood, Jose Montesinos, Brian Rodvien, Matthew Zipkin, Matt  O'Donnell, Adam Oestergaard, Giovannie Espiritu, Ryan Johnson, Lisa Younger, Annamarie MacLeod, Rachel Marie Lewis, Alex Arleo, Brent Steffensen, Steffi Graffis.
+    #Andre Meadows, Morgan Benoit, Jeneta St. Clair, Myko Olivier, Erin Konstantine, David Atwood, Jose Montesinos, Brian Rodvien,
+    #Matthew Zipkin, Matt  O'Donnell, Adam Oestergaard, Giovannie Espiritu, Ryan Johnson, Lisa Younger, Annamarie MacLeod,
+    #Rachel Marie Lewis, Alex Arleo, Brent Steffensen, Steffi Graffis.
     @full_cast ||=
       [
         {
@@ -37,14 +39,13 @@ module ApplicationHelper
         {
           name: 'morgan_benoit',
           character: 'Steffen / Bert',
-          resume: %Q|
-            Morgan Benoit has been involved in Chinese martial arts for over 15 years.
-            Following his passion, he moved to China at age 18 to study at the Beijing Sports University where he mastered Long Fist Kung Fu.
-            Once ascending to the top of his class in just a couple of years, he was admitted to the prestigious Shi Cha Hai Sports Academy,
-            a former training ground of Jet Li and many of China's top Olympic athletes.
-            His love of martial arts led to his interest in acting and he started in China as a stunt man.
-            He eventually worked his way up to leading roles in many Chinese and American productions.
-            His ability and enthusiasm was well-noted by Jackie Chan whom he worked with in <em>The Forbidden Kingdom (2008)</em>.|
+          resume: %Q|Morgan Benoit has been involved in Chinese martial arts for over 15 years. Following his passion,
+          he moved to China at age 18 to study at the Beijing Sports University where he mastered Long Fist Kung Fu.
+          Once ascending to the top of his class in just a couple of years, he was admitted to the prestigious Shi Cha Hai Sports Academy,
+          a former training ground of Jet Li and many of China's top Olympic athletes. His love of martial arts led to his interest in acting.
+          He started working on Chinese films as a stunt man but eventually worked his way up to leading roles in many Chinese and American productions.
+          His ability and enthusiasm was well-noted by Jackie Chan whom he worked with in <em>The Forbidden Kingdom (2008)</em>.|,
+          website: 'BloodyPalms.com'
         },
         {
           name: 'jeneta_st_clair',
@@ -53,7 +54,7 @@ module ApplicationHelper
           resume: %Q|After growing up in Sheboygan, Wisconsin, then half-raised in Indianapolis under the tutelage of her drama director father,
           Jeneta moved straight to California after graduating high school. Since completing the contemporary program at the American Musical and Dramatic Academy
           in February 2010, she has been a part of multiple films and commercials. Her most recent credits include a PS3 commercial and feature films including
-          <em>Mudman</em>, <em>Paradox Alice</em>, and <em>The Return of the Killer Shrewsall</em> being released this summer!
+          <em>Mudman</em>, <em>Paradox Alice</em>, and <em>The Return of the Killer Shrews</em> all being released this summer!
           In between projects, she continues her training with the Will Wallace Acting Company and performing company and self-written sketch shows
           at the Straitjacket Society in Hollywood.|
         },
@@ -91,6 +92,13 @@ module ApplicationHelper
           website: 'Montanick.com'
         },
         {
+          name: 'brian_rodvien',
+          role: 'Composer',
+          resume: %Q|Brian Rodvien has scored several films, including <em>Owned</em>.
+          He is the composer and producer of a new production called <em>Springbreak the Musical</em>.
+          He is also the drummer for a musical hip hop improv group called the Freeze.|
+        },
+        {
           name: 'matthew_zipkin',
           role: 'Sound Mix/Sound Design/Foley',
           resume: %Q|Matthew Zipkin studied music and audio engineering at Berklee College of Music in Boston.
@@ -114,6 +122,17 @@ module ApplicationHelper
           He has recorded numerous albums, toured in four different countries, shared the stage with everyone from Kid Koala to Joseph Gordon-Levitt,
           scored fast food commercials, and music directed live theatrical events.|,
           website: 'RyanThomasJohnson.com'
+        },
+        {
+          name: 'lisa_younger',
+          character: 'Becky (Bar Girl)',
+          resume: %Q|Lisa Younger received her degree in acting from The American Academy of Dramatic Arts in 2008 and has since appeared
+          in over a dozen film and theatre productions. She most recently won an award for outstanding performance for her turn as
+          Emily in the stage play <em>Our Town</em> and was part of a cast nominated for an LA Weekly award for best comedy ensemble in the
+          play <em>Dirty Pooh</em>, in which she played a sexually confused Christopher Robin. Other credits include the acclaimed online
+          comedy series <em>Hell's Kitty</em> as well as numerous independent films, including the upcoming <em>Lie With Me</em> with fellow Bert cast
+          member Rachel Marie Lewis. Lisa currently splits her time between LA and New York.|,
+          website: 'LisaYounger.com'
         },
         {
           name: 'annamarie_mac_leod',
