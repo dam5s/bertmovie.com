@@ -107,6 +107,16 @@ module ApplicationHelper
           website: 'MatthewZipkin.com'
         },
         {
+          name: 'adam_oestergaard',
+          role: 'Main Title/Logo Design',
+          resume: %Q|Adam hails from Denmark, the home of Hans Christian Andersen and Soren Kierkegaard.
+          But it's safe to say that Adam's sensibilities aren't so much &ldquo;The Little Match Girl&rdquo; as they are &ldquo;The Wedding Crashers.&rdquo;
+          And his philosophy is less informed by existentialism as by, &ldquo;Late Night with Conan O'Brian.&rdquo;
+          Adam earned his degree in Graphic Design and Advertising, then a BA in Multimedia Design and Digital Animation,
+          and a MA in Visual Effects. After a teaching stint, Adam began work at Bonfire Labs in San Francisco, CA.|,
+          website: 'AdamOe.com'
+        },
+        {
           name: 'giovannie_espiritu',
           character: 'Babette',
           resume: %Q|Giovannie Espiritu is a seasoned, working actress who was nominated for Best Supporting Actress alongside Academy Award nominees Alfre Woodard
@@ -161,6 +171,17 @@ module ApplicationHelper
           and alongside Michael Madsen in the drama <em>Sprawl</em>.
           Follow Alex Arleo’s news and updates on his #{link_to 'Facebook page', 'http://www.facebook.com/AlexArleo'}
           and #{link_to 'IMDB page', 'http://www.imdb.me/alexarleo'} to learn more about this exciting, young actor.|
+        },
+        {
+          name: 'steffi_graffis',
+          character: 'Cell Phone Girl',
+          resume: %Q|Steffi is a recent graduate of NYU’s Tisch School of the Arts, where she trained at the Stella Adler Studio of Acting
+          and Stonestreet Studios. She was born in Seattle, Washington, where she grew up doing regional children’s theatre.
+          During her time at Tisch, Adler Technique and Shakespeare were strong focuses in her training for three years,
+          then her Senior year was spent training in film acting. Since graduating NYU, Steffi has done several student films and
+          web series in New York. She is excited to have recently moved to Los Angeles, where she will be pursuing projects in film,
+          TV, and commercials. Her scene in <em>Bert the Emotion Picture</em> was her first scene shot in LA, and is very excited
+          to have been a part of such a great film!|
         }
       ]
   end
