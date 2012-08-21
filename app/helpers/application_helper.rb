@@ -96,7 +96,8 @@ module ApplicationHelper
           role: 'Composer',
           resume: %Q|Brian Rodvien has scored several films, including <em>Owned</em>.
           He is the composer and producer of a new production called <em>Springbreak the Musical</em>.
-          He is also the drummer for a musical hip hop improv group called the Freeze.|
+          He is also the drummer for a musical hip hop improv group called the Freeze.|,
+          website: 'BrianRodvien.com'
         },
         {
           name: 'matthew_zipkin',
