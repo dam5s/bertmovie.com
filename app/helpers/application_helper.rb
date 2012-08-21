@@ -69,7 +69,7 @@ module ApplicationHelper
           website: 'MykoOlivier.com'
         },
         {
-          name: 'erin_constantine',
+          name: 'erin_konstantine',
           character: 'Shewana',
           resume: %Q|Erin is an avid fan of all things real, like children, diapers and going to the grocery store in her pajamas.
           However, she adores the fantastical break of acting, especially when playing reality, and just can't bring herself to quit,
