@@ -77,6 +77,16 @@ module ApplicationHelper
           passionate indie films and meaty theater.|
         },
         {
+          name: 'david_atwood',
+          character: 'Louis',
+          resume: %Q|Premiering in the Montanick Pictures breakout hit <em>Owned</em> while earning his B.F.A.
+          in Dramatic Art at San Francisco State University, David would go on to play in Denison Entertainment's <em>Vagary</em>
+          and <em>Pushing Boundaries</em> before reuniting with  Montanick for <em>Bert</em> shortly after relocating
+          to Los Angeles. Having had his fill of vikings and barbarians for the nonce, David has turned over a new razor
+          and looks forward to playing the hero at long last. He add a special thanks to the cast and crew for the warm
+          welcome to these merry few.|
+        },
+        {
           name: 'jose_montesinos',
           role: 'Writer/Director',
           resume: %Q|A native San Franciscan of Peruvian and Salvadorean descent,
