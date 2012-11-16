@@ -19,9 +19,9 @@ module ApplicationHelper
 
 
   def full_cast
-    #Andre Meadows, Morgan Benoit, Jeneta St. Clair, Myko Olivier, Erin Konstantine, David Atwood, Jose Montesinos, Brian Rodvien,
-    #Matthew Zipkin, Matt  O'Donnell, Adam Oestergaard, Giovannie Espiritu, Ryan Johnson, Lisa Younger, Annamarie MacLeod,
-    #Rachel Marie Lewis, Alex Arleo, Brent Steffensen, Steffi Graffis.
+    #Andre Meadows, Morgan Benoit, Jeneta St. Clair, Myko Olivier, Erin Konstantine, David Atwood, Jose Montesinos, Jennifer Temple,
+    #Matt Somerville, Brian Rodvien, Matthew Zipkin, Matt  O'Donnell, Adam Oestergaard, Giovannie Espiritu, Ryan Johnson, Lisa Younger,
+    #Annamarie MacLeod, Rachel Marie Lewis, Alex Arleo, Brent Steffensen, Steffi Graffis.
     @full_cast ||=
       [
         {
@@ -100,6 +100,25 @@ module ApplicationHelper
           Film Festival, and has since found a distribution deal with Maverick
           Entertainment. It was released in July 2011.|,
           website: 'Montanick.com'
+        },
+        {
+          name: 'jennifer_temple',
+          role: 'Production Manager / Assistant Director',
+          resume: %Q|Jennifer graduated from the University of California, Davis with a Bachelors of Psychology and Communication and minor in Education.
+          She began teaching in San Francisco while earning credentials in English and Psychology at Saint Mary’s College of California.
+          Jennifer is currently pursuing her Masters in Teaching.
+          Jennifer first delved into the world of film as an informal helper during the post production phase of the crime drama <em>Owned</em>.
+          Since then, she has been lucky enough to work on several projects, including the web series <em>Social Lies</em>,
+          the comedic short <em>Souls of Splendor</em>, and the action feature <em>Unlucky Stars</em>.|,
+        },
+        {
+          name: 'matt_somerville',
+          role: 'Assistant Director / Sound Recordist',
+          resume: %Q|Matt Somerville is a writer, director, and editor.
+          In addition, he's been known to take on sound and assistant director responsibilities.
+          He currently resides in Los Angeles working as an editor.
+          He's done promo editing / various crew jobs on a number of productions, including:
+          <em>Sherlock Holmes 2: Game of Shadows</em>, <em>Cloud Atlas</em>, <em>The Apparition</em>, <em>Top Chef</em>, and <em>Web Therapy</em>.|
         },
         {
           name: 'brian_rodvien',
