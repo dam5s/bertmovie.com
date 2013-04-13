@@ -43,4 +43,17 @@ $(function() {
   });
 
   $('#notice').delay(5000).fadeOut();
+
+  var $firstQuote = $("li", "#quotes").first();
+  var showQuote = function($quote) {
+      var $nextQuote = $quote.next();
+      if ($nextQuote.length == 0) $nextQuote = $firstQuote;
+      $quote.fadeIn();
+
+      setTimeout(function() {
+        $quote.fadeOut();
+        showQuote($nextQuote);
+      }, 6000);
+  };
+  showQuote($firstQuote);
 });

@@ -81,6 +81,26 @@ header {
     top: 0;
     left: 0;
   }
+
+  #quotes {
+    li {
+      position: absolute;
+      right: 1em;
+      bottom: 2em;
+      padding: 1em;
+      width: 60%;
+      display: none;
+      font-size: 160%;
+      line-height: 150%;
+      text-align: right;
+      font-family: 'Donegal One';
+
+      span {
+        font-size: 70%;
+        font-family: 'Helvetica Neue' sans-serif;
+      }
+    }
+  }
 }
 
 nav {
