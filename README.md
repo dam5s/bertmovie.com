@@ -6,9 +6,3 @@ BertMovie.com
 After the transformation, Bert walks away in his new body and the stranger wakes confused and trapped in Bert’s body. The question remains, however, if Bert can ultimately transcend his (or anyone else’s) skin.
 
 Also starring Myko Olivier and Erin Konstantine, *Bert: The Emotion Picture* is a surreal fable about the nature of love and superficiality.
-
-
-About the website
------------------
-
-The website is using Rails 3.2 on Ruby 1.9, because I couldn't be bothered to re-implement the asset pipeline in Sinatra...

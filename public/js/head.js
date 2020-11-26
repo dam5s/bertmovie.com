@@ -6,6 +6,7 @@
 
     http://headjs.com
 */
+
 (function(doc) {
 
     var html = doc.documentElement,
@@ -678,4 +679,3 @@
     }, 300);
 
 })(document);
-
